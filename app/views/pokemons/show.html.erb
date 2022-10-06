@@ -1,0 +1,23 @@
+<h1><%= @pokemon.number %> - <%= @pokemon.name %></h1>
+
+<p>
+    Type 1: <%= @pokemon.type1 %><br/>
+    Type 2: <%= @pokemon.type2 %><br/>
+    Total: <%= @pokemon.total %><br/>
+    HP: <%= @pokemon.hp %><br/>
+    Attack: <%= @pokemon.attack %><br/>
+    Defense: <%= @pokemon.defense %><br/>
+    Sp. Atk: <%= @pokemon.sp_atk %><br/>
+    Sp. Def: <%= @pokemon.sp_def %><br/>
+    Speed: <%= @pokemon.speed %><br/>
+    Generation: <%= @pokemon.generation %><br/>
+    Legendary: <%= @pokemon.legendary %><br/>
+</p>
+
+<ul>
+  <li><%= link_to "Edit", edit_pokemon_path(@pokemon) %></li>
+  <li><%= button_to "Destroy", pokemon_path(@pokemon), method: :delete, data: {
+        turbo_method: :delete,
+        turbo_confirm: "Confirm delete?"
+    } %></li>
+</ul>

@@ -40,6 +40,8 @@ gem "jbuilder"
 gem "tzinfo-data"
 # gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
+gem "rspec-rails"
+
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 

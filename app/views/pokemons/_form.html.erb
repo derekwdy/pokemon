@@ -1,0 +1,70 @@
+<%= form_with model: pokemon do |form| %>
+  <div>
+    <%= form.label :number %><br>
+    <%= form.number_field :number %>
+  </div>
+
+  <div>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </div>
+  
+  <div>
+    <%= form.label :type1 %><br>
+    <%= form.text_field :type1 %>
+  </div>
+
+  <div>
+    <%= form.label :type2 %><br>
+    <%= form.text_field :type2 %>
+  </div>
+
+  <div>
+    <%= form.label :total %><br>
+    <%= form.number_field :total %>
+  </div>
+
+  <div>
+    <%= form.label :hp %><br>
+    <%= form.number_field :hp %>
+  </div>
+
+  <div>
+    <%= form.label :attack %><br>
+    <%= form.number_field :attack %>
+  </div>
+
+  <div>
+    <%= form.label :defense %><br>
+    <%= form.number_field :defense %>
+  </div>
+
+  <div>
+    <%= form.label :sp_atk %><br>
+    <%= form.number_field :sp_atk %>
+  </div>
+
+  <div>
+    <%= form.label :sp_def %><br>
+    <%= form.number_field :sp_def %>
+  </div>
+
+  <div>
+    <%= form.label :speed %><br>
+    <%= form.number_field :speed %>
+  </div>
+
+  <div>
+    <%= form.label :generation %><br>
+    <%= form.number_field :generation %>
+  </div>
+
+  <div>
+    <%= form.label :legendary %><br>
+    <%= form.check_box :legendary %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,16 @@
+<h1>Pokemons</h1>
+
+<ul>
+  <% @pokemons.each do |pokemon| %>
+    <li>
+      <%= link_to pokemon.link_text, pokemon %>
+    </li>
+  <% end %>
+</ul>
+
+<ul>
+  <li><%= link_to "Previous Page", pokemons_path(page: @page - 1, per_page: @per_page) %></li>
+  <li><%= link_to "Next Page", pokemons_path(page: @page + 1, per_page: @per_page) %></li>
+</ul>
+
+<%= link_to "New Pokemon", new_pokemon_path %>
